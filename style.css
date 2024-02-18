@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: skyblue;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.formin{
+    width: 90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+.formin h1{
+   font-size: 30px;
+   margin-bottom: 30px;
+    color: #333;
+    position: relative;
+}
+.formin h1::after{
+    content: '';
+    position: absolute;
+    border-radius: 3px;
+    width: 30%;
+    height: 4px;
+    bottom: -12px;
+    left: 50%;
+    background: #333;
+    transform: translateX(-50%);
+}
+.input-feild{
+    background: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+.input-feild input{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 15px 20px;
+    width: 100%;
+    color: #333;
+    font-size: 18px;
+    border-radius: 3px;
+}
+.input-feild i{
+    margin-left: 15px;
+    color: gray;
+}
+form p{
+    text-align: left;
+    font-size: 13px;
+}
+form p a{
+    text-decoration: none;
+    font-weight: 600;
+}
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.btn button{
+    flex-basis: 48%;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    background: #07c070;
+    height: 40px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s;
+}
+.input-group{
+    height: 250px;
+}
+.btn button.disable{
+    background: #ccc;
+}
